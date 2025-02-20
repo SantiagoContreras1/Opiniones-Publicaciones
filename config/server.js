@@ -4,12 +4,19 @@ import helmet from "helmet";
 import morgan from "morgan";
 import { dbConnection } from "./mongo.js";
 
+import authRoutes from "../src/auth/auth.router.js"
+
 const middlewares = (app)=>{
     app.use(express.urlencoded({extended: false})) //Para los forms
     app.use(express.json()) // Para que JS entienda los JSON
     app.use(cors()) // dominios que pueden acceder
     app.use(helmet()) // Es para la seguridad
     app.use(morgan('dev')) // Muestra mensajes para nuestras rutas (POST,PUT etc)
+}
+
+//RUTAS
+const routes = (app)=>{
+    app.use("/publicationsSystem/auth",authRoutes)
 }
 
 const conectarDb = async () => {
@@ -28,6 +35,7 @@ export const initServer = ()=>{
     try {
         middlewares(app)
         conectarDb()
+        routes(app)
         app.listen(port)
         console.log(`Server running on port ${port}`)
     } catch (error) {
