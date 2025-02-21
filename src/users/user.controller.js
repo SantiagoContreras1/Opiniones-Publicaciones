@@ -1,5 +1,5 @@
 import { response,request } from "express";
-import { hash } from "argon2";
+import { hash,verify } from "argon2";
 import User from "./user.model.js";
 
 export const getUsers = async (req,res) => {
@@ -12,7 +12,7 @@ export const getUsers = async (req,res) => {
         ])
 
         res.status(200).json({
-            succes:true,
+            success:true,
             total,
             users
         })
@@ -36,7 +36,7 @@ export const searchUser = async (req,res) => {
         }
 
         res.status(200).json({
-            succes:true,
+            success:true,
             user
         })
 
@@ -49,28 +49,12 @@ export const searchUser = async (req,res) => {
 }
 
 export const updateUser = async (req,res) => {
-    
     try {
-        console.log("REQ.BODY:", req.body); // Muestra el cuerpo completo de la petición
         const {id} = req.params
-        const {role,password,...data} = req.body
-        console.log("PASSWORD:", password); // Verifica si el password llega
+        const {role,passwordOld,passwordNew,...data} = req.body
 
-
-        if(req.user.role === 'USER_ROLE' && id !== req.user._id.toString()){
-            return res.status(403).json({
-                succes: false,
-                message: "No tenes permiso para editar un usuario, boludito"
-            })
-        }
-        
-        if (password) {
-            console.log('PELOTUDO 4')
-            data.password = await hash(password)
-        }
-        
-        const user = await User.findByIdAndUpdate(id,data,{new:true})
-        
+        // Busco el user primero
+        const user = await User.findById(id)   
         if (!user) {
             return res.status(404).json({
                 succe: false,
@@ -78,10 +62,32 @@ export const updateUser = async (req,res) => {
             })
         }
 
+        // Valido los permisos antes de continuar
+        if(req.user.role === 'USER_ROLE' && id !== req.user._id.toString()){
+            return res.status(403).json({
+                ss: false,
+                message: "No tenes permiso para editar un usuario, boludito"
+            })
+        }
+
+        // Verificar y actualizar la password
+        if (passwordOld && passwordNew) {
+            const verificarIgualdad = await verify(user.password, passwordOld) // Comparamos la contraseña antigua con la almacenada
+            if (!verificarIgualdad) {
+                return res.status(403).json({
+                    ss: false,
+                    message: "Password anterior is incorrect"
+                })
+            }
+            data.password = await hash(passwordNew) // Encriptar la contraseña
+        }
+
+        const userUpdated = await User.findByIdAndUpdate(id,data,{new:true})
+
         res.status(200).json({
-            succes:true,
+            success:true,
             msg: 'Usuario actualizado pelotudo!!!',
-            user
+            user: userUpdated
         })
 
     } catch (error) {
