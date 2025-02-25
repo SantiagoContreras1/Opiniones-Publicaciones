@@ -96,6 +96,15 @@ export const getPublications = async (req,res) => {
     const query = {estado:true}
     try {
         const publications = await Publication.find(query)
+            .populate({
+                path: "comentarios",
+                populate: {
+                    path: "user",
+                    select: "name"
+                }
+            })
+            .populate("user") // traer solo el nombre del usuario
+            .populate("category", "name"); // traer solo el nombre de la categoría
 
         const publicationsWithUsers = await Promise.all(
             publications.map(async (publication) => {
