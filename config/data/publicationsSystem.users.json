@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "67bd67877b714f3623c75349"
+  },
+  "name": "Admin",
+  "email": "admin@admin.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$XFDIBW8HL/4BpUzP5neIcQ$98Cbez6w1GwD/LaYOOnkx1gIY6zDwPlyl6Lf0jcx1Cs",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bd679d7b714f3623c75351"
+  },
+  "name": "Luis",
+  "email": "luis@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$tFARXaNYONUfQq+5bbSLhQ$xXRactBUUIIFN0r1tqW6kSOkciWWHx5unu9I1CMZFgo",
+  "role": "USER_ROLE",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bd67a57b714f3623c75354"
+  },
+  "name": "Mayen",
+  "email": "mayen@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$lQo+6FCG7OFFy7OtOXnOfQ$bGBJozFLNMqvQYs6nefVwfJ4XauhYzvW3dBFPzk37AM",
+  "role": "USER_ROLE",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bd67b07b714f3623c75357"
+  },
+  "name": "Wisin",
+  "email": "wisin@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$CerSFoBcYrS6OR4vB2Q8pg$n9ISCKn7MgqhhN3VnMZDq4CJfqv1i27EQNg+TVXlh9k",
+  "role": "USER_ROLE",
+  "estado": true,
+  "__v": 0
+}]

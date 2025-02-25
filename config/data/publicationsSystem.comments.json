@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "67bd6b407b714f3623c7539e"
+  },
+  "text": "Su pez, licenciado Mayen, me parece un completo estorbo ya que no hace nada útil, vergonzoso.",
+  "publication": {
+    "$oid": "67bd69497b714f3623c75379"
+  },
+  "user": {
+    "$oid": "67bd679d7b714f3623c75351"
+  },
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bd6bcd7b714f3623c753ad"
+  },
+  "text": "Estimado, le informo que mi pex, es traído desde las costas caribeñas, ese pex, triplica el valor de su patrimonio. Le pido respeto. Soy miembro del Cartel de Sinaloa NG. Posdata, su caracol tiene cara de tonto.",
+  "publication": {
+    "$oid": "67bd69ca7b714f3623c7538a"
+  },
+  "user": {
+    "$oid": "67bd67a57b714f3623c75354"
+  },
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bd6d437b714f3623c753c3"
+  },
+  "text": "Perdóneme patrón, no sabe lo arrepentido que estoy, disculpeme patrón las disculpas no son suficientes, perdóneme patrón yo estoy pa las que sea patrón pa lo que sea patrón perdone patrón.",
+  "publication": {
+    "$oid": "67bd69497b714f3623c75379"
+  },
+  "user": {
+    "$oid": "67bd67a57b714f3623c75354"
+  },
+  "estado": true,
+  "__v": 0
+}]

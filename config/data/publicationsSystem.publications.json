@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "67bd69497b714f3623c75379"
+  },
+  "title": "Mi nuevo pez",
+  "text": "Mi nevo pez se llama Alejandro, estoy contento",
+  "category": {
+    "$oid": "67bd67877b714f3623c75345"
+  },
+  "estado": true,
+  "comentarios": [
+    {
+      "$oid": "67bd6b407b714f3623c7539e"
+    },
+    {
+      "$oid": "67bd6d437b714f3623c753c3"
+    }
+  ],
+  "user": {
+    "$oid": "67bd67877b714f3623c75349"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "67bd69ca7b714f3623c7538a"
+  },
+  "title": "Mi nuevo caracol",
+  "text": "Encontré un caracolito en el arbolito de mi casa, lo adopté. Se llama flash",
+  "category": {
+    "$oid": "67bd67877b714f3623c75345"
+  },
+  "estado": true,
+  "comentarios": [
+    {
+      "$oid": "67bd6bcd7b714f3623c753ad"
+    }
+  ],
+  "user": {
+    "$oid": "67bd679d7b714f3623c75351"
+  },
+  "__v": 1
+}]
