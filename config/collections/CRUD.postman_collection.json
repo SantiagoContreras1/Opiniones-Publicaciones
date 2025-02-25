@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "d80f8a05-837d-4302-a477-37af09917930",
+		"name": "CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42040033"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/users/search/67bd67b07b714f3623c75357",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"users",
+						"search",
+						"67bd67b07b714f3623c75357"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/categories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/publication/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"publication",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA1MjA5OTEsImV4cCI6MTc0MDUzODk5MX0.WEvdjlcv9dSL4bh3PPgAkDA0CgUKY50VKf9dza6vfMk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Musica\",\r\n  \"description\":\"De coco y de piña pa la niña, lampiña. Honny, te noto funny\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/categories/save/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"categories",
+						"save",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publications",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlM2M5ZDc0MWM0YmE0MDNjODk2M2EiLCJpYXQiOjE3NDA1MjExNzEsImV4cCI6MTc0MDUzOTE3MX0.Vj73bFCHPOB2p1kZn-Pety_CWh7k_8coSDfBmepO6fI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\":\"Mi nuevo koala\",\r\n  \"text\":\"Encontré un koala en el bosque de mi casa, lo adopté. Se llama batman\",\r\n  \"category\":\"67be3e49741c4ba403c8964d\",\r\n  \"user\":\"67be3c9d741c4ba403c8963a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/publication/publication/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"publication",
+						"publication",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlM2M5ZDc0MWM0YmE0MDNjODk2M2EiLCJpYXQiOjE3NDA1MjExNzEsImV4cCI6MTc0MDUzOTE3MX0.Vj73bFCHPOB2p1kZn-Pety_CWh7k_8coSDfBmepO6fI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\":\"Pex globo.\",\r\n  \"text\":\"Yo tuve un pez globo, era muy \",\r\n  \"user\":\"67be3c9d741c4ba403c8963a\",\r\n  \"publication\":\"67bd69497b714f3623c75379\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/comments/save/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"comments",
+						"save",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA1MjE5NjQsImV4cCI6MTc0MDUzOTk2NH0.1wYPEyNiXzi9zcW-3d8wDwbFmxAQE6sirMrkwQi4t2Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/categories/delete/67be450c741c4ba403c89688",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"categories",
+						"delete",
+						"67be450c741c4ba403c89688"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "67bd68887b714f3623c7536e",
+							"disabled": true
+						},
+						{
+							"key": "x-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA1MjE5NjQsImV4cCI6MTc0MDUzOTk2NH0.1wYPEyNiXzi9zcW-3d8wDwbFmxAQE6sirMrkwQi4t2Y",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA1MjE5NjQsImV4cCI6MTc0MDUzOTk2NH0.1wYPEyNiXzi9zcW-3d8wDwbFmxAQE6sirMrkwQi4t2Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/publication/delete/67be418d741c4ba403c89671",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"publication",
+						"delete",
+						"67be418d741c4ba403c89671"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlM2M5ZDc0MWM0YmE0MDNjODk2M2EiLCJpYXQiOjE3NDA1MjMyODIsImV4cCI6MTc0MDU0MTI4Mn0.WBW1HewS-0zSEQQQLzq86wP-i0Yyb18BveNbq06Pha0",
+						"type": "text"
+					},
+					{
+						"key": "_id",
+						"value": "67be4189741c4ba403c8966b",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/comments/delete/67be4189741c4ba403c8966b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"comments",
+						"delete",
+						"67be4189741c4ba403c8966b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA1MjE5NjQsImV4cCI6MTc0MDUzOTk2NH0.1wYPEyNiXzi9zcW-3d8wDwbFmxAQE6sirMrkwQi4t2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Luis Editado desde Postman\",\r\n  \"email\": \"luis@gmail.com\",\r\n  \"passwordOld\": \"1234567\",\r\n  \"passwordNew\":\"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/users/update/67bd679d7b714f3623c75351",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"users",
+						"update",
+						"67bd679d7b714f3623c75351"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA1MjE5NjQsImV4cCI6MTc0MDUzOTk2NH0.1wYPEyNiXzi9zcW-3d8wDwbFmxAQE6sirMrkwQi4t2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"Vacaciones\",\r\n  \"description\":\"Publica aqui solo los viajes que hayas hecho, yo (admin) me fui a la antigua ayer.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/categories/update/67be3e49741c4ba403c8964d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"categories",
+						"update",
+						"67be3e49741c4ba403c8964d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publication",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA1MjE5NjQsImV4cCI6MTc0MDUzOTk2NH0.1wYPEyNiXzi9zcW-3d8wDwbFmxAQE6sirMrkwQi4t2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\":\"Alotenango\",\r\n  \"text\":\"El sabado me fui a alotenango, que bonis.\",\r\n  \"category\":\"67be3e49741c4ba403c8964d\",\r\n  \"user\":\"67bd679d7b714f3623c75351\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/publication/update/67be4049741c4ba403c89657",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"publication",
+						"update",
+						"67be4049741c4ba403c89657"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comments",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjdhNTdiNzE0ZjM2MjNjNzUzNTQiLCJpYXQiOjE3NDA1MjUzMDUsImV4cCI6MTc0MDU0MzMwNX0.DiGJTJGvfCVkvUPxBYEux9RIIT5utdscWEYaum9hW8g",
+						"type": "text"
+					},
+					{
+						"key": "_id",
+						"value": "67bd6d437b714f3623c753c3",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\":\"Disculpas.\",\r\n  \"text\":\"Perdóneme patrón, no sabe lo arrepentido que estoy, disculpeme patrón las disculpas no son suficientes, perdóneme patrón yo estoy pa las que sea patrón pa lo que sea patrón perdone patrón. Este comentario se edito en postman\",\r\n  \"user\":\"67bd679d7b714f3623c75351\",\r\n  \"publication\":\"67bd69497b714f3623c75379\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/publicationsSystem/comments/update/67bd6bcd7b714f3623c753ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"publicationsSystem",
+						"comments",
+						"update",
+						"67bd6bcd7b714f3623c753ad"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
