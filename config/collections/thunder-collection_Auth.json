@@ -1,0 +1,45 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Auth",
+    "collectionId": "7e22d59b-dd30-46e1-ac99-fc202b70cf18",
+    "dateExported": "2025-02-25T07:16:12.655Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9838312a-f31a-45d3-b6ed-76a8b79197ea",
+            "colId": "7e22d59b-dd30-46e1-ac99-fc202b70cf18",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:3003/publicationsSystem/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-01-29T19:05:22.232Z",
+            "modified": "2025-02-25T06:48:16.865Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Wisin\",\n  \"email\": \"wisin@gmail.com\",\n  \"password\": \"1234567\",\n  \"role\":\"USER_ROLE\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "1539ffea-13a4-4fc0-8a19-40c5e0746501",
+            "colId": "7e22d59b-dd30-46e1-ac99-fc202b70cf18",
+            "containerId": "",
+            "name": "Loginn",
+            "url": "http://localhost:3003/publicationsSystem/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-05T03:42:41.721Z",
+            "modified": "2025-02-25T07:13:14.642Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"luis@gmail.com\",\n  \"password\": \"1234567\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "4FyBl6zAoxjPcoubK9OFN-4h-SjH-iw9RdpkntJadtE9T4F9ao4sGRwLe22PgTyz_nVVA-H0eZI8DJBXQyKhdA"
+}

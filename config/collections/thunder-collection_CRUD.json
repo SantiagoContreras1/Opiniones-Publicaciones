@@ -1,0 +1,300 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "CRUD",
+    "collectionId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+    "dateExported": "2025-02-25T07:16:48.328Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "591d1973-5f76-478b-a53d-349e8e76fdf4",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "GET/users",
+            "url": "http://localhost:3003/publicationsSystem/users/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-05T03:42:55.921Z",
+            "modified": "2025-02-20T06:13:43.841Z",
+            "headers": []
+        },
+        {
+            "_id": "9e267d7c-e071-4191-841e-edd03e9a3cb9",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "SEARCH/ Users",
+            "url": "http://localhost:3003/publicationsSystem/users/search/67bd67b07b714f3623c75357",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-05T05:36:11.082Z",
+            "modified": "2025-02-25T06:49:38.156Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyNjNjOGRiZjU0M2MxZmYxMjBjMTUiLCJpYXQiOjE3Mzk3NDQyMDYsImV4cCI6MTczOTc2MjIwNn0.mamCN0JvKQ60iNql5Iq0Zz-0uNMhxBcSG3Ic3eLpLmw"
+                },
+                {
+                    "name": "_id",
+                    "value": "67b25f0252f182a9c52216af",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "5d05fb90-fb76-48a6-94b5-58d7b9238f89",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "GET/ Categories",
+            "url": "http://localhost:3003/publicationsSystem/categories/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-02-16T22:58:45.717Z",
+            "modified": "2025-02-21T07:26:12.794Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYTY4YWRmOWNhYThhYTg2ODRlZmUiLCJpYXQiOjE3Mzk3NjEyOTYsImV4cCI6MTczOTc3OTI5Nn0.xvssS56jDyUpuoqYDvKwEeI0eeLLnO1CO3o5LPAqsMU"
+                },
+                {
+                    "name": "_id",
+                    "value": "67b2a68adf9caa8aa8684efe"
+                }
+            ]
+        },
+        {
+            "_id": "ec52f5f9-2dc7-454b-9245-2fb833b1116c",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "GET/publications",
+            "url": "http://localhost:3003/publicationsSystem/publication/",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2025-02-22T06:53:45.988Z",
+            "modified": "2025-02-22T06:54:23.272Z",
+            "headers": []
+        },
+        {
+            "_id": "9ab47b52-82b9-448b-aa5f-7ee611db0411",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "POST/ categories",
+            "url": "http://localhost:3003/publicationsSystem/categories/save/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-02-15T19:58:36.361Z",
+            "modified": "2025-02-25T06:51:52.539Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA0NjYyMDIsImV4cCI6MTc0MDQ4NDIwMn0.aqeXgNoaC478rje9NwGz-K3rmcsqx-q3XTKgr-aF1Sg"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Viajes\",\n  \"description\":\"Categorías de viajes por el world\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a5e973f2-6766-447b-ab8e-76463e4ff3ae",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "POST/publications",
+            "url": "http://localhost:3003/publicationsSystem/publication/publication/",
+            "method": "POST",
+            "sortNum": 95000,
+            "created": "2025-02-22T05:51:20.761Z",
+            "modified": "2025-02-25T06:57:14.294Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc5ZDdiNzE0ZjM2MjNjNzUzNTEiLCJpYXQiOjE3NDA0NjY1MjksImV4cCI6MTc0MDQ4NDUyOX0.br6c7i3B4BdtiW1rwEZvgAB-8tth-PvVuBf9mDmcUyM"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Mi nuevo caracol\",\n  \"text\":\"Encontré un caracolito en el arbolito de mi casa, lo adopté. Se llama flash\",\n  \"category\":\"67bd67877b714f3623c75345\",\n  \"user\":\"67bd679d7b714f3623c75351\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0c61211a-53a5-4936-9867-7974427deab7",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "POST/comments",
+            "url": "http://localhost:3003/publicationsSystem/comments/save/",
+            "method": "POST",
+            "sortNum": 107500,
+            "created": "2025-02-24T22:27:34.573Z",
+            "modified": "2025-02-25T07:12:03.569Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjdhNTdiNzE0ZjM2MjNjNzUzNTQiLCJpYXQiOjE3NDA0NjcwMjksImV4cCI6MTc0MDQ4NTAyOX0.UBMzmtskmc1oZ96OqdN0E_1YD52jGspDXt-VbbQYxEM"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Disculpas.\",\n  \"text\":\"Perdóneme patrón, no sabe lo arrepentido que estoy, disculpeme patrón las disculpas no son suficientes, perdóneme patrón yo estoy pa las que sea patrón pa lo que sea patrón perdone patrón.\",\n  \"user\":\"67bd679d7b714f3623c75351\",\n  \"publication\":\"67bd69497b714f3623c75379\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d871aaec-c0a7-4db2-99c0-cdc6d77e36f8",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "DELETE/category",
+            "url": "http://localhost:3003/publicationsSystem/categories/delete/67b83e1679519ae7a13dc7a2",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2025-02-17T02:03:44.379Z",
+            "modified": "2025-02-21T08:50:47.199Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I2YjFmYjg4NWQyYmQwMzM5OWUxNzQiLCJpYXQiOjE3NDAxMjc4MzUsImV4cCI6MTc0MDE0NTgzNX0.HkOOYP9axhtq4OUdjPd9v7YTx4AY0MN-Yt19cQ5PkCc"
+                },
+                {
+                    "name": "_id",
+                    "value": "67b83d8a1a11fe5b7b58a7d2",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "30e68b39-c450-4143-b8d9-b68152ef80bc",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "DELETE/publication",
+            "url": "http://localhost:3003/publicationsSystem/publication/delete/67b96a17729b45cb510e50dc",
+            "method": "DELETE",
+            "sortNum": 125000,
+            "created": "2025-02-22T07:10:59.756Z",
+            "modified": "2025-02-22T07:12:13.173Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I2YjI3N2UxZTBkZDc3NzRhMGU2ODYiLCJpYXQiOjE3NDAyMDM3MDMsImV4cCI6MTc0MDIyMTcwM30.ErZb0ZBMZt0kEL3e3x6HlkMKtj5u1F-o0MZQGeXtd6A"
+                }
+            ]
+        },
+        {
+            "_id": "f2bf80b3-c399-4dc2-acdd-39771da8a7b2",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "UPDATE/users",
+            "url": "http://localhost:3003/publicationsSystem/users/update/67bd679d7b714f3623c75351",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2025-02-17T02:48:08.057Z",
+            "modified": "2025-02-25T06:50:45.848Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA0NjYyMDIsImV4cCI6MTc0MDQ4NDIwMn0.aqeXgNoaC478rje9NwGz-K3rmcsqx-q3XTKgr-aF1Sg"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Luis\",\n  \"email\": \"luis@gmail.com\",\n  \"passwordOld\": \"1234567\",\n  \"passwordNew\":\"1234567\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "fa07ba6e-344b-4e65-9328-9ac8bf4075a6",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "UPDATE/categories",
+            "url": "http://localhost:3003/publicationsSystem/categories/update/67bd68887b714f3623c7536e",
+            "method": "PUT",
+            "sortNum": 160000,
+            "created": "2025-02-21T08:58:33.479Z",
+            "modified": "2025-02-25T06:53:25.226Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc4NzdiNzE0ZjM2MjNjNzUzNDkiLCJpYXQiOjE3NDA0NjYyMDIsImV4cCI6MTc0MDQ4NDIwMn0.aqeXgNoaC478rje9NwGz-K3rmcsqx-q3XTKgr-aF1Sg"
+                },
+                {
+                    "name": "_id",
+                    "value": "67bd68887b714f3623c7536e"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Senderismo\",\n  \"description\":\"Publiaciones de senderistas aficionados\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c812abf2-9bf4-47db-b0d6-703c252f00f5",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "UPDATE/publication",
+            "url": "http://localhost:3003/publicationsSystem/publication/update/67b96b148ae359d717af5fae",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2025-02-22T06:37:02.612Z",
+            "modified": "2025-02-22T06:38:49.174Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I2YjI3N2UxZTBkZDc3NzRhMGU2ODYiLCJpYXQiOjE3NDAyMDM3MDMsImV4cCI6MTc0MDIyMTcwM30.ErZb0ZBMZt0kEL3e3x6HlkMKtj5u1F-o0MZQGeXtd6A"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Mi nuevo hamster\",\n  \"text\":\"Mi nevo hamster ahora se llama Shady jr, estoy contento\",\n  \"category\":\"67b83b61112435d238078868\",\n  \"user\":\"67b6b277e1e0dd7774a0e686\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5ed88cec-f2ac-4272-a573-13534e8ca101",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "UPDATE/Comments",
+            "url": "http://localhost:3003/publicationsSystem/comments/update/67bd6d437b714f3623c753c3",
+            "method": "PUT",
+            "sortNum": 220000,
+            "created": "2025-02-25T04:30:54.750Z",
+            "modified": "2025-02-25T07:15:15.105Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNjc5ZDdiNzE0ZjM2MjNjNzUzNTEiLCJpYXQiOjE3NDA0Njc1OTQsImV4cCI6MTc0MDQ4NTU5NH0.rAcQNxZtrD2xLxqUl9k7T1KGwyM6Nvu-y_Vs2LxXQOo"
+                },
+                {
+                    "name": "_id",
+                    "value": "67bd6d437b714f3623c753c3"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Disculpas.\",\n  \"text\":\"Perdóneme patrón, no sabe lo arrepentido que estoy, disculpeme patrón las disculpas no son suficientes, perdóneme patrón yo estoy pa las que sea patrón pa lo que sea patrón perdone patrón.\",\n  \"user\":\"67bd679d7b714f3623c75351\",\n  \"publication\":\"67bd69497b714f3623c75379\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3c231398-274f-4cbc-8078-f6e692e41861",
+            "colId": "b76cf7d5-a372-4372-b5d8-c7c0e1be876b",
+            "containerId": "",
+            "name": "DELETE/Comment",
+            "url": "http://localhost:3003/publicationsSystem/comments/delete/67bd50458d32f433c4fcce98",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2025-02-25T05:05:01.905Z",
+            "modified": "2025-02-25T05:18:18.595Z",
+            "headers": [
+                {
+                    "name": "_id",
+                    "value": "67bd50458d32f433c4fcce98"
+                },
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNDdmMjA0NzllZDNjYzM2ZjQzODkiLCJpYXQiOjE3NDA0NjAwMzAsImV4cCI6MTc0MDQ3ODAzMH0.xxdvFOPDDvDbUjdr2XZZFAxeB5kBOjNzmuQ8qh-F1sE"
+                }
+            ]
+        }
+    ],
+    "ref": "7z6I8OSYMWSTwHnYeEtILsyExtI9fwidOtO5JwJ7AJpe_hc62f9Xh_7hs0pPYG8cU0TXE0A127uwT7DNxlRXaQ"
+}

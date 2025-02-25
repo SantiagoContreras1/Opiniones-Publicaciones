@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "67bd67877b714f3623c75345"
+  },
+  "name": "Animales Domésticos",
+  "description": "Categoría de animales domésticos",
+  "publicaciones": [],
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bd68887b714f3623c7536e"
+  },
+  "name": "Senderismo",
+  "description": "Publiaciones de senderistas aficionados",
+  "publicaciones": [],
+  "estado": true,
+  "__v": 0
+}]
